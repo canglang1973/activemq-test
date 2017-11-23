@@ -1,5 +1,6 @@
-package com.canglang.activemq;
+package com.canglang.activemq.openwire.spring;
 
+import com.canglang.activemq.MethodInvokeMq;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MethodInvokeMqProducer {
 
     public static void main(String[] args){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("activemq/activemq-producer.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("activemq/openwire/activemq-producer.xml");
         final MethodInvokeMq methodInvokeMq = applicationContext.getBean("methodInvokeMqProcessor", MethodInvokeMq.class);
         final MethodInvokeMq methodInvokeMq_topic = applicationContext.getBean("methodInvokeMqProcessor_topic", MethodInvokeMq.class);
         for (int i=0;i<10;i++){

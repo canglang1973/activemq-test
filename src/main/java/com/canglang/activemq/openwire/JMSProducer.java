@@ -1,4 +1,4 @@
-package com.canglang.activemq;
+package com.canglang.activemq.openwire;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;

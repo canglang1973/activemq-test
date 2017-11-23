@@ -1,6 +1,5 @@
-package com.canglang.activemq;
+package com.canglang.activemq.openwire.spring;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -12,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MethodInvokeMqConsumer {
 
     public static void main(String[] args){
-        new ClassPathXmlApplicationContext("spring-core.xml","activemq/activemq-consumer.xml");
+        new ClassPathXmlApplicationContext("spring-core.xml", "activemq/openwire/activemq-consumer.xml");
 
     }
 }
